@@ -1,18 +1,5 @@
 body {
-	background-color: #08000F;
-}
-
-h1 {
-    color: blue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.ullist	 {
-    color: chartreuse;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-}
-
-h2 {
-    color: aqua;
+	background-color: #131415;
+    cursor: crosshair;
+    color: rgb(223, 231, 238);
 }
