@@ -1,5 +1,21 @@
 body {
-	background-color: #131415;
-    cursor: crosshair;
-    color: rgb(223, 231, 238);
+	background-color: #090c08;
+    color: #e9ecef
+}
+
+ul { 
+    list-style: none;  
+    font-size: 20px;
+} 
+
+li::before {
+    content: "\2605"; 
+    color: yellow;  
+	
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+h1 {
+    font-size: 50px;
 }
