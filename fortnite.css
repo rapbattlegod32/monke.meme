@@ -19,3 +19,12 @@ li::before {
 h1 {
     font-size: 50px;
 }
+
+#actuallinks {
+    font-size: 25px;
+}
+
+#iboughtwhiskey {
+    display: block;
+    margin: auto;
+}
