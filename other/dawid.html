@@ -11,16 +11,17 @@
         body {
             background-color: rgb(33, 37, 41);
         }
-        .sometext { 
+
+        .sometext {
             font-size: x-large;
-        font-family: sans-serif;
-        color: azure;
-        display: block;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+            font-family: sans-serif;
+            color: azure;
+            display: block;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         a:link {
@@ -40,7 +41,7 @@
             background-color: transparent;
             text-decoration: underline;
         }
-        
+
         img:hover {
             filter: drop-shadow(0.35rem 0.35rem 0.35rem rgba(0, 0, 0, 0.5));
         }
@@ -53,31 +54,61 @@
         .context p {
             font-size: small;
         }
+
+        div#lH {
+            overflow: hidden;
+        }
+
+        audio#aH {
+            opacity: 0.01;
+        }
     </style>
 </head>
+
 <body>
-    <div class="sometext">
-        <h1>Dawid Maslanka album</h1>
-        <img class="davidimages" src="./../media/david/david1.png" alt="David irl 1" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david2.jpg" alt="David irl 2" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david3.png" alt="David irl 3" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david4.png" alt="David irl 4" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david5.png" alt="David irl 5" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david6.JPG" alt="David irl 6" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david8.png" alt="David irl 8" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david9.jpg" alt="David irl 9" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david10.JPG" alt="David irl 10" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david11.jpg" alt="David irl 11" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david12.JPG" alt="David irl 12" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david13.JPG" alt="David irl 13" width="150" height="280">
-        <img class="davidimages" src="./../media/david/david14.JPG" alt="David irl 14" width="150" height="280">
-        <div class="context">
-            <details>
-                <summary>context about dawid(xiphy)</summary>
-                <p>under construction</p>
-            </details>
+    <div id="lH">
+        <audio controls id="aH">
+            <source src="./../media/audio/foghorn.ogg" type="audio/ogg">
+            <source src="./../media/audio/foghorn.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="sometext">
+            <h1>Dawid Maslanka album</h1>
+            <img class="davidimages" src="./../media/david/david1.png" alt="David irl 1" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david2.jpg" alt="David irl 2" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david3.png" alt="David irl 3" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david4.png" alt="David irl 4" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david5.png" alt="David irl 5" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david6.JPG" alt="David irl 6" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david8.png" alt="David irl 8" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david9.jpg" alt="David irl 9" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david10.JPG" alt="David irl 10" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david11.jpg" alt="David irl 11" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david12.JPG" alt="David irl 12" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david13.JPG" alt="David irl 13" width="150" height="280" onclick="playSound()">
+            <img class="davidimages" src="./../media/david/david14.JPG" alt="David irl 14" width="150" height="280" onclick="playSound()"> 
+            <div class="context">
+                <details>
+                    <summary>context about dawid(xiphy)</summary>
+                    <p>under construction</p>
+                </details>
+            </div>
+            <h6><a href="https://monke.meme/">home</a> - <a href="https://monke.meme/other.html">links</a></h6>
         </div>
-        <h6><a href="https://monke.meme/">home</a> - <a href="https://monke.meme/other.html">links</a></h6>
+        <audio id="myAudio">
+            <source src="./../media/audio/foghorn.ogg" type="audio/ogg">
+            <source src="./../media/audio/foghorn.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          
+          <script>
+          function playSound() {
+            var audio = new Audio("./../media/audio/foghorn.mp3");
+            audio.cloneNode().play();
+        }
+
+          </script>
     </div>
 </body>
+
 </html>
