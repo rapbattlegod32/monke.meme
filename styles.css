@@ -4,10 +4,13 @@ html, body {
     font-family: sans-serif;
 }
 
+body {
+    background-color: #000;
+}
 .main {
     margin: 0;
     padding: 0;
-    color: black;
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,7 +33,7 @@ html, body {
     margin: 0;
     font-size: inherit;
     line-height: inherit;
-    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1pxrgb(255, 255, 255)000, -1px -1px 0 #ffffff;
     color: rgb(255, 255, 255);
 }
 
@@ -42,15 +45,16 @@ html, body {
     transform: scaleX(0.8);
     font-size: 0.65em;
     text-align: center;
+    color: white;
 }
 
 .main a:link {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
