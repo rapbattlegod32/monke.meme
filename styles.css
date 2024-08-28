@@ -1,0 +1,59 @@
+.main {
+    margin: 510px;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+    transform: scaleX(1.25);
+}
+
+.h1-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2em;
+    display: inline-block;
+}
+
+.h1-button h1 {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    color: rgb(255, 255, 255);
+}
+
+.main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 0px;
+    transform: scaleX(0.8);
+    text-align: center;
+}
+
+.main a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+a:active {
+    color: white;
+}
+
+.colormode {
+    size: 5em;
+}
