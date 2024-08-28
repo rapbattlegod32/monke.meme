@@ -1,17 +1,24 @@
-.main {
-    margin: 510px;
-    padding: 0;
-    color: black;
+html, body {
+    height: 100%;
+    margin: 0;
     font-family: sans-serif;
-    font-size: 2em;
-    text-align: center;
-    transform: scaleX(1.25);
 }
 
+.main {
+    margin: 0;
+    padding: 0;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(1.25);
+    font-size: 2em;
+    text-align: center;
+}
 .h1-button {
     background: none;
     border: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
     cursor: pointer;
     text-align: center;
@@ -33,6 +40,7 @@
     padding: 0;
     margin-top: 0px;
     transform: scaleX(0.8);
+    font-size: 0.65em;
     text-align: center;
 }
 
@@ -56,4 +64,19 @@ a:active {
 
 .colormode {
     size: 5em;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .h1-button {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        width: 100%;
+        box-sizing: border-box; 
+    }
 }
