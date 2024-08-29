@@ -1,17 +1,27 @@
-.main {
-    margin: 510px;
-    padding: 0;
-    color: black;
+html, body {
+    height: 100%;
+    margin: 0;
     font-family: sans-serif;
-    font-size: 2em;
-    text-align: center;
-    transform: scaleX(1.25);
 }
 
+body {
+    background-color: #000000;
+}
+.main {
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(1.25);
+    font-size: 2em;
+    text-align: center;
+}
 .h1-button {
     background: none;
     border: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
     cursor: pointer;
     text-align: center;
@@ -23,7 +33,7 @@
     margin: 0;
     font-size: inherit;
     line-height: inherit;
-    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1pxrgb(255, 255, 255)000, -1px -1px 0 #ffffff;
     color: rgb(255, 255, 255);
 }
 
@@ -33,20 +43,22 @@
     padding: 0;
     margin-top: 0px;
     transform: scaleX(0.8);
+    font-size: 0.65em;
     text-align: center;
+    color: white;
 }
 
 .main a:link {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(119, 0, 255);
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
@@ -56,4 +68,20 @@ a:active {
 
 .colormode {
     size: 5em;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .h1-button {
+        font-size: 1.5rem;
+    }
+    
+ 
+    button {
+        width: 100%;
+        box-sizing: border-box; 
+    }
 }
