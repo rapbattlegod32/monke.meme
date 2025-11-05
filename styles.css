@@ -7,7 +7,7 @@ html, body {
 body {
     background-color: #000000;
 }
-.main {
+.welcome {
     margin: 0;
     padding: 0;
     color: rgb(255, 255, 255);
@@ -18,52 +18,51 @@ body {
     font-size: 2em;
     text-align: center;
 }
-.h1-button {
-    background: none;
-    border: none;
-    padding: 0px;
-    margin: 0;
-    cursor: pointer;
-    text-align: center;
-    font-size: 2em;
-    display: inline-block;
-}
 
-.h1-button h1 {
-    margin: 0;
-    font-size: inherit;
-    line-height: inherit;
-    text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1pxrgb(255, 255, 255)000, -1px -1px 0 #ffffff;
-    color: rgb(255, 255, 255);
-}
-
-.main ul {
-    list-style-type: none;
+.aboutme {
     margin: 0;
     padding: 0;
-    margin-top: 0px;
-    transform: scaleX(0.8);
-    font-size: 0.65em;
+    color: rgb(255, 255, 255);
+    left: 50%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.aboutme img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.cat-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cat-gallery div {
     text-align: center;
     color: white;
 }
 
-.main a:link {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+.cat-gallery p {
+    scale: 90%;
 }
 
-a:visited {
-    color: rgb(255, 255, 255);
+.cat-gallery img {
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
 }
 
-a:hover {
-    color: rgb(119, 0, 255);
-    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
-}
 
-a:active {
-    color: white;
+
+.languagelist {
+    list-style: disc;
 }
 
 .colormode {
